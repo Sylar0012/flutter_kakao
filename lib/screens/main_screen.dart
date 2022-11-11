@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_kakao/screens/chat_screen.dart';
+import 'package:flutter_kakao/screens/friend_screen.dart';
+import 'package:flutter_kakao/screens/more_screen.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class MainScreen extends StatefulWidget {
@@ -18,9 +21,9 @@ class _MainScreenState extends State<MainScreen> {
         // 여러페이지로 이동하기 위해 사용. 인덱스가 스텍으로 쌓임
         index: _selectedIndex, // 현재 인덱스 값을 나타내는 변수
         children: [
-          Center(child: Text("IndexStack 1")),
-          Center(child: Text("IndexStack 2")),
-          Center(child: Text("IndexStack 3")),
+          FriendScreen(),
+          ChatScreen(),
+          MoreScreen(),
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
