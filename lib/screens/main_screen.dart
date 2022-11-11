@@ -30,7 +30,7 @@ class _MainScreenState extends State<MainScreen> {
         showSelectedLabels: false,
         showUnselectedLabels: false,
         currentIndex: _selectedIndex,
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.grey.shade200,
         unselectedItemColor: Colors.black54,
         onTap: (index) {
           // 선택된 아이콘의 인덱스를 보여줌.
