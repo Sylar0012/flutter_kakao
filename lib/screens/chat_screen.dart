@@ -10,7 +10,12 @@ class ChatScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Text("채팅"),
+        title: Text(
+          "채팅",
+          style: TextStyle(
+            color: Colors.black,
+          ),
+        ),
       ),
       body: ListView(
         children: List.generate(
